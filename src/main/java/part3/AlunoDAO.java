@@ -58,7 +58,7 @@ public class AlunoDAO {
 
             //Preparar statement com os parâmetros recebidos
             PreparedStatement stmt = conn.prepareStatement(sql);
-            stmt.setInt(1, id);
+            stmt.setInt(1, id); //este número 1 esta se referindo ao interrogação da string da consulta
 
             //Executa consulta e armazena o retorno da consulta no objeto "rs".
             ResultSet rs = stmt.executeQuery();
